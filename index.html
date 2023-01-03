@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="images/fontawesome/css/all.css" rel="stylesheet">
+    <link href="images/fontawesome/webfonts/fa-brands-400.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+
+    <section class="container">
+
+        <div class="left-content">
+
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="graphical representation of the business" ></a>
+            </div>
+
+            <div class="land-hero">
+                <img src="images/hero-mobile.jpg" alt="">
+            </div>
+
+            <div class="info">
+
+                <h2>WE'RE</h2>
+                <h1>COMING<br>SOON</h1> 
+                <p>Hello fellow shoppers! We're currently building our new <br>fashion store. 
+               Add your email bellow to stay up-to-date with <br>announcements and our launch
+               deals.
+                </p>
+
+                <form class="container-1" id="form" name="submit-to-google-sheet">
+                    <div class="email">
+                        <input id="email-field" type="email" name="Email" placeholder="Email Address" required onkeyup="check()">
+                        <button class="erro-btn" id="icon2">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        </button>
+                        <button type="submit" id="sub-btn">
+                        <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        </button>
+
+                        <label id="textField"></label>
+                    </div>
+                </form>
+
+            </div>
+
+            
+            
+        </div>
+
+
+        <div class="right-content">
+
+            <img src="images/hero-desktop.jpg" alt="">
+
+        </div>
+
+
+    </section>
+
+    <!-- mobile section -->
+
+    <section class="mobile">
+
+        <div class="logo-mobile">
+            <a href="index.html"><img src="images/logo.svg" alt="graphical representation of the business" ></a>
+        </div>
+
+        <div class="land-hero">
+            <img src="images/hero-mobile.jpg" alt="">
+        </div>
+
+        <div class="mobile-content">
+
+            <h2>WE'RE</h2>
+            <h1>COMING<br>SOON</h1> 
+            <p>Hello fellow shoppers! We're currently building our new fashion store. 
+           Add your email bellow to stay up-to-date with announcements and our launch
+           deals.
+            </p>
+
+            <form class="container-mobile" id="form" name="">
+                <div class="email-mobile">
+                    <input id="email-mobile" type="email" name="Email" placeholder="Email Address" required onkeyup="check()">
+                    <button type="submit" id="sub-btn-mobile">
+                    <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <label id="text-mobile"></label>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>

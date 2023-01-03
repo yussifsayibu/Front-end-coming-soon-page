@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+}
+
+.left-content{
+    width: 60%;
+    height: 100vh;
+    margin-left: 170px;
+    font-family: Josefin Sans;
+    justify-items: center;
+    align-items: center;
+}
+
+.land-hero{
+    display: none;
+}
+.left-content h2{
+
+    margin-top: 70px;
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 8px;
+    color: hsl(0, 36%, 70%)    ;
+}
+
+.left-content h1{
+
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+.left-content p{
+    color: hsl(0, 36%, 70%)    ;
+    margin-bottom: 20px;
+}
+
+
+.left-content .logo{
+    margin-block: min(10vh,10rem);
+}
+
+.left-content .logo a{
+    text-decoration: none;
+}
+
+.right-content{
+    width: 40%;
+    height: 100vh;
+    overflow: hidden
+    /* background: url(images/hero-desktop.jpg); */
+}
+
+.right-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-1{
+    position: absolute;
+    font-family: Josefin Sans;
+    margin-bottom: 20px;
+}
+
+.container-1 .email{
+    height: 50px;
+    position: relative;
+    border-radius: 50px;
+}
+
+.container-1 .email input{
+    height: 100%;
+    width: 450px;
+    padding-left: 30px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid hsl(0, 36%, 70%);
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    
+}
+
+.container-1 .email #sub-btn{
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translate(-50%, -50%);
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    background: linear-gradient(hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    color: white;
+    width: 80px;
+    height: 50px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    z-index: 99;
+
+}
+
+.container-1 .email #sub-btn:hover{
+    background: hsl(0, 80%, 86%);
+    color: white;
+    transform: scale(10px);
+    box-shadow: 0px 0px 25px 0 hsla(0, 80%, 86%, 0.5),-10px 10px 25px 0 hsla(0, 74%, 74%, 0.5);
+
+}
+
+#textField{
+    display: flex;
+    flex-direction: column;
+    font-family: Josefin Sans;
+    margin-top: 20px;
+}
+
+.erro-btn{
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    color: hsl(0, 93%, 68%);
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+    /* z-index: 99; */
+
+}
+
+.mobile{
+    display: none;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+@media only screen and (min-width: 375px) and (max-width: 667px){
+    .container{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        background: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+        width: 100%;
+        min-height: 100vh;
+        font-family: Josefin Sans;
+        overflow: hidden;
+    }
+
+    .mobile-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 60px;
+
+    }
+
+    .mobile-content h2{
+
+        margin-top: 60px;
+        font-weight: 300;
+        font-size: 40px;
+        letter-spacing: 8px;
+        color: hsl(0, 36%, 70%)    ;
+    }
+
+    .mobile-content h1{
+
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+    }
+
+    .mobile-content p{
+        color: hsl(0, 36%, 70%)    ;
+        margin: min(10vh,15px);
+    }
+
+    .land-hero{
+        display: flex;
+        width: 100%;
+    }
+
+    .land-hero img{
+        width: 100%;
+    }
+
+    .logo-mobile img{
+        width: 100px;
+        margin-top: min(10vh,20px);
+        margin-left: min(10vh,20px);
+        margin-bottom: min(10vh,20px);
+    }
+
+    .container-mobile{
+        /* position: absolute; */
+        font-family: Josefin Sans;
+        margin-bottom: 20px;
+    }
+
+    .container-mobile .email-mobile{
+        height: 50px;
+        position: relative;
+        border-radius: 50px;
+    }
+
+    .container-mobile .email-mobile input{
+        height: 100%;
+        width: 300px;
+        padding-left: 30px;
+        font-size: 16px;
+        outline: none;
+        border-radius: 50px;
+        border: 1px solid hsl(0, 36%, 70%);
+        color: hsl(0, 36%, 70%);
+        font-weight: 300;
+        
+    }
+
+    .container-mobile .email-mobile #sub-btn-mobile{
+        position: absolute;
+        top: 50%;
+        right: -9px;
+        transform: translate(-50%, -50%);
+        /* padding: 8px 12px; */
+        cursor: pointer;
+        border-radius: 50px;
+        border: 0;
+        outline: none;
+        background: linear-gradient(hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+        color: white;
+        width: 80px;
+        height: 50px;
+        transition-duration: 0.4s;
+        overflow: hidden;
+        z-index: 99;
+    
+    }
+
+    .container-mobile .email-mobile #sub-btn-mobile:hover{
+        background: hsl(0, 80%, 86%);
+        color: white;
+        transform: scale(10px);
+        box-shadow: 0px 0px 25px 0 hsla(0, 80%, 86%, 0.5),-10px 10px 25px 0 hsla(0, 74%, 74%, 0.5);
+    
+    }
+    
+    #text-mobile{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Josefin Sans;
+        margin-top: min(10vh,20px);
+        margin-bottom: min(10vh,20px);
+        height: 100%;
+        font-size: 16px;
+        margin-left: min(10vh,20px);
+        margin-right: min(10vh,20px);
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 550px) and (max-width: 625px){
+    .container{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        background: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+        width: 100%;
+        min-height: 100vh;
+        font-family: Josefin Sans;
+        overflow: hidden;
+    }
+
+    .mobile-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 60px;
+
+    }
+
+    .mobile-content h2{
+
+        margin-top: 60px;
+        font-weight: 300;
+        font-size: 40px;
+        letter-spacing: 8px;
+        color: hsl(0, 36%, 70%)    ;
+    }
+
+    .mobile-content h1{
+
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+    }
+
+    .mobile-content p{
+        color: hsl(0, 36%, 70%)    ;
+        margin: min(10vh,15px);
+    }
+
+    .land-hero{
+        display: flex;
+        width: 100%;
+    }
+
+    .land-hero img{
+        width: 100%;
+    }
+
+    .logo-mobile img{
+        width: 100px;
+        margin-top: min(10vh,20px);
+        margin-left: min(10vh,20px);
+        margin-bottom: min(10vh,20px);
+    }
+
+    .container-mobile{
+        /* position: absolute; */
+        font-family: Josefin Sans;
+        margin-bottom: 20px;
+    }
+
+    .container-mobile .email-mobile{
+        height: 50px;
+        position: relative;
+        border-radius: 50px;
+    }
+
+    .container-mobile .email-mobile input{
+        height: 100%;
+        width: 350px;
+        padding-left: 30px;
+        font-size: 16px;
+        outline: none;
+        border-radius: 50px;
+        border: 1px solid hsl(0, 36%, 70%);
+        color: hsl(0, 36%, 70%);
+        font-weight: 300;
+        
+    }
+
+    .container-mobile .email-mobile #sub-btn-mobile{
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        transform: translate(-50%, -50%);
+        /* padding: 8px 12px; */
+        cursor: pointer;
+        border-radius: 50px;
+        border: 0;
+        outline: none;
+        background: linear-gradient(hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+        color: white;
+        width: 80px;
+        height: 50px;
+        transition-duration: 0.4s;
+        overflow: hidden;
+        z-index: 99;
+    
+    }
+
+    .container-mobile .email-mobile #sub-btn-mobile:hover{
+        background: hsl(0, 80%, 86%);
+        color: white;
+        transform: scale(10px);
+        box-shadow: 0px 0px 25px 0 hsla(0, 80%, 86%, 0.5),-10px 10px 25px 0 hsla(0, 74%, 74%, 0.5);
+    
+    }
+    
+    #text-mobile{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Josefin Sans;
+        margin-top: min(10vh,20px);
+        margin-bottom: min(10vh,20px);
+        height: 100%;
+        font-size: 16px;
+        margin-left: min(10vh,20px);
+        margin-right: min(10vh,20px);
+    }
+
+    
+
+}
